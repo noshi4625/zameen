@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+}
+
+.header ul{
+  list-style: none;
+  text-decoration: none;
+  
+}
+.header ul li{
+  display: inline;
+  margin: 10px;
+  /* font-weight: bolder; */
+  font-size: 18px;
+  color: white;
+  line-height: 60px;
+}
+.ua input {
+  width: 130px;
+  padding: 5px 0px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: transparent;
+}
+.ua input::placeholder{
+    color: white;
+    font-size: 15px;
+
+}
+.ua a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  margin-left: 15px;
+  font-size: 15px;
+}
+.ua .b1{
+  width: 130px;
+  padding: 6px 0px;
+  border-radius: 7px;
+  border:none;
+}
+.ua .b2{
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: white;
+}
+.ico{
+  font-size: 30px;
+}
+.icoo{
+  font-size: 25px;
+  margin-top: -5px;
+}
+
+.search{
+  position: relative;
+  right:40px ;
+
+}
+.plus{
+  position: relative;
+  left: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .header ul li:nth-child(3) {
+    display: none; 
+  }
+
+  .ua input,
+  .ua .b2:nth-child(3) { 
+    display: none;
+  }
+  .ua input,
+  .ua .b2:nth-child(2) { 
+    display: none;
+  }
+  .ua input,
+  .ua .b2:nth-child(1) { 
+    display: none;
+  }
+  .ua .b1 {
+    width: 100px;
+  }
+}
+
+
+@media (max-width: 1020px) {
+  .ua input,
+  .ua .b2:nth-child(3) { 
+    display: none;
+  }
+  .ua input,
+  .ua .b2:nth-child(2) { 
+    display: none;
+  }
+  
+  .ua .b1 {
+    width: 100px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .ua input,
+  .ua .b2:nth-child(1) {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .header ul {
+    gap: 5px;
+  }
+
+  .header ul li,
+  .ua input,
+  .ua .b1,
+  .ua .b2 {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .ua input {
+    width: 100px;
+  }
+
+  .ico,
+  .icoo {
+    font-size: 20px;
+  }
+
+  .header,.header ul,.ua {
+    flex-wrap: nowrap; 
+    overflow: hidden;
+  }
+}
